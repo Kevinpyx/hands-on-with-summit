@@ -24,9 +24,9 @@ This just shows that the training time increases linearly as the epoch number ge
 This plot shows a decreasing (possibly exponentially, require further investigation, or maybe can be derived mathematically) trend of training time as the batch size gets larger. This is because the larger the batch size, the less number of batches we need to train the model. The greater the number of epochs, the greater the difference in time between different batch sizes.
 
 ### Time vs Accuracy with batches
-![Time vs Accuracy with batches](./Time_Accuracy_Batches_124.png)
+![Time vs Accuracy with batches](./Accuracy_Time_Batches_124.png)
 Since we want a model to be trained to a high accuracy in short amount of time, the data points on the top left corner are the best.
 
 ### Time vs Accuracy with epochs
-![Time vs Accuracy with epochs](./Time_Accuracy_Epochs_124.png)
+![Time vs Accuracy with epochs](./Accuracy_Time_Epochs_124.png)
 This one is similar to the last one. This one looks really cool too. According to what we found out with earlier plots, for every one line with three points, the batch size should be 4, 2, 1 respectively from left to right. That is because we know the larger the batch size, the shorter time it takes to train with the same epoch number, the lower the accuracy to start with. 
