@@ -110,8 +110,8 @@ device = 'cpu' # interestingly cpu is faster than mps
 data_root = '/Users/kevinpyx/Documents/Datasets/CV/The CIFAR-10 dataset'
 learning_rate = 0.001
 
-epoch_list = [2, 4, 6, 8, 10, 12, 16, 20, 25, 30, 35, 40]
-batch_size_list = [1, 2, 4]
+epoch_list = [30, 35, 40, 45, 50, 55]
+batch_size_list = [4, 5, 10, 20, 24, 25, 50]
 
 acc_time_list = np.zeros((len(epoch_list), len(batch_size_list), 2))
 

@@ -1,0 +1,143 @@
+Epoch:2, Batch size:1
+Accuracy: 51.02
+Time: 94.33623194694519
+
+Epoch:2, Batch size:2
+Accuracy: 45.84
+Time: 43.89555811882019
+
+Epoch:2, Batch size:4
+Accuracy: 36.49
+Time: 30.16850996017456
+
+Epoch:4, Batch size:1
+Accuracy: 56.66
+Time: 195.26174402236938
+
+Epoch:4, Batch size:2
+Accuracy: 51.18
+Time: 86.20284104347229
+
+Epoch:4, Batch size:4
+Accuracy: 45.1
+Time: 59.22299003601074
+
+Epoch:6, Batch size:1
+Accuracy: 61.39
+Time: 284.505704164505
+
+Epoch:6, Batch size:2
+Accuracy: 55.8
+Time: 129.47693920135498
+
+Epoch:6, Batch size:4
+Accuracy: 50.83
+Time: 90.70677185058594
+
+Epoch:8, Batch size:1
+Accuracy: 65.08
+Time: 378.0661518573761
+
+Epoch:8, Batch size:2
+Accuracy: 59.32
+Time: 173.81442880630493
+
+Epoch:8, Batch size:4
+Accuracy: 53.54
+Time: 117.66424703598022
+
+Epoch:10, Batch size:1
+Accuracy: 63.24
+Time: 475.72012281417847
+
+Epoch:10, Batch size:2
+Accuracy: 62.19
+Time: 218.26703572273254
+
+Epoch:10, Batch size:4
+Accuracy: 57.13
+Time: 148.9669051170349
+
+Epoch:12, Batch size:1
+Accuracy: 63.48
+Time: 571.802099943161
+
+Epoch:12, Batch size:2
+Accuracy: 63.26
+Time: 261.17912578582764
+
+Epoch:12, Batch size:4
+Accuracy: 59.62
+Time: 177.6702539920807
+
+Epoch:16, Batch size:1
+Accuracy: 64.38
+Time: 760.8411359786987
+
+Epoch:16, Batch size:2
+Accuracy: 63.59
+Time: 343.4654097557068
+
+Epoch:16, Batch size:4
+Accuracy: 61.27
+Time: 238.75905179977417
+
+Epoch:20, Batch size:1
+Accuracy: 62.46
+Time: 955.306911945343
+
+Epoch:20, Batch size:2
+Accuracy: 64.54
+Time: 434.7847878932953
+
+Epoch:20, Batch size:4
+Accuracy: 62.41
+Time: 297.7761778831482
+
+Epoch:25, Batch size:1
+Accuracy: 63.04
+Time: 1180.8462750911713
+
+Epoch:25, Batch size:2
+Accuracy: 64.04
+Time: 538.1470830440521
+
+Epoch:25, Batch size:4
+Accuracy: 65.27
+Time: 367.7911112308502
+
+Epoch:30, Batch size:1
+Accuracy: 59.66
+Time: 1421.3934650421143
+
+Epoch:30, Batch size:2
+Accuracy: 63.73
+Time: 649.5265390872955
+
+Epoch:30, Batch size:4
+Accuracy: 66.22
+Time: 444.2153100967407
+
+Epoch:35, Batch size:1
+Accuracy: 60.29
+Time: 1668.484540939331
+
+Epoch:35, Batch size:2
+Accuracy: 63.24
+Time: 767.3278098106384
+
+Epoch:35, Batch size:4
+Accuracy: 62.55
+Time: 527.8821258544922
+
+Epoch:40, Batch size:1
+Accuracy: 60.7
+Time: 1908.8170700073242
+
+Epoch:40, Batch size:2
+Accuracy: 62.94
+Time: 859.3966581821442
+
+Epoch:40, Batch size:4
+Accuracy: 63.1
+Time: 588.0998528003693
