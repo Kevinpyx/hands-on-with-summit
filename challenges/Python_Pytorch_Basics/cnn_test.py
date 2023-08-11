@@ -110,8 +110,8 @@ device = 'cpu' # interestingly cpu is faster than mps
 data_root = '/Users/kevinpyx/Documents/Datasets/CV/The CIFAR-10 dataset'
 learning_rate = 0.001
 
-epoch_list = [2, 4, 6, 8, 10, 12, 14, 16]
-batch_size_list = [1, 2, 4, 5, 10, 20, 25, 40, 50]
+epoch_list = [2, 4, 6, 8, 10, 12, 16, 20, 25, 30, 35, 40]
+batch_size_list = [1, 2, 4]
 
 acc_time_list = np.zeros((len(epoch_list), len(batch_size_list), 2))
 
@@ -125,8 +125,16 @@ for i, epoch in enumerate(epoch_list):
         print('Accuracy:', acc)
         print('Time:', time)
         print('')
+        print('Current summary')
+        for x in range(i+1):
+            for y in range(j+1):
+                print('Epoch:' + str(epoch_list[x]) + ', Batch size:' + str(batch_size_list[y]))
+                print('Accuracy:', acc_time_list[x,y,0])
+                print('Time:', acc_time_list[x,y,1])
+                print('')
 
 # print summary
+'''
 print('Summary')
 for i, epoch in enumerate(epoch_list):
     for j, batch_size in enumerate(batch_size_list):
@@ -134,6 +142,7 @@ for i, epoch in enumerate(epoch_list):
         print('Accuracy:', acc_time_list[i,j,0])
         print('Time:', acc_time_list[i,j,1])
         print('')
+'''
 
 # Plot1: Accuracy vs Epoch
 # Every batch size is one line of different color
@@ -142,6 +151,7 @@ for i, epoch in enumerate(epoch_list):
 plt.figure()
 for i, batch_size in enumerate(batch_size_list):
     plt.plot(epoch_list, acc_time_list[:,i,0], label='Batch size: ' + str(batch_size))
+plt.title('Accuracy vs Epoch')
 plt.xlabel('Epoch')
 plt.ylabel('Accuracy')
 plt.legend()
@@ -155,8 +165,60 @@ plt.show()
 plt.figure()
 for i, batch_size in enumerate(batch_size_list):
     plt.plot(epoch_list, acc_time_list[:,i,1], label='Batch size: ' + str(batch_size))
+plt.title('Time vs Epoch')
 plt.xlabel('Epoch')
 plt.ylabel('Time')
 plt.legend()
 plt.show()
 
+# Plot3: Accuracy vs Batch size
+# Every epoch is one line of different color
+# Batch size is the x axis
+# Accuracy is the y axis
+plt.figure()
+for i, epoch in enumerate(epoch_list):
+    plt.plot(batch_size_list, acc_time_list[i,:,0], label='Epoch: ' + str(epoch))
+plt.title('Accuracy vs Batch size')
+plt.xlabel('Batch size')
+plt.ylabel('Accuracy')
+plt.legend()
+plt.show()
+
+# Plot4: Time vs Batch size
+# Every epoch is one line of different color
+# Batch size is the x axis
+# Time is the y axis
+plt.figure()
+for i, epoch in enumerate(epoch_list):
+    plt.plot(batch_size_list, acc_time_list[i,:,1], label='Epoch: ' + str(epoch))
+plt.title('Time vs Batch size')
+plt.xlabel('Batch size')
+plt.ylabel('Time')
+plt.legend()
+plt.show()
+
+# Plot5: Accuracy vs Time
+# Every epoch is one line of different color
+# Time is the x axis
+# Accuracy is the y axis
+plt.figure()
+for i, epoch in enumerate(epoch_list):
+    plt.plot(acc_time_list[i,:,1], acc_time_list[i,:,0], label='Epoch: ' + str(epoch))
+plt.title('Accuracy vs Time')
+plt.xlabel('Time')
+plt.ylabel('Accuracy')
+plt.legend()
+plt.show()
+
+# Plot6: Accuracy vs Time
+# Every batch size is one line of different color
+# Time is the x axis
+# Accuracy is the y axis
+plt.figure()
+for i, batch_size in enumerate(batch_size_list):
+    plt.plot(acc_time_list[:,i,1], acc_time_list[:,i,0], label='Batch size: ' + str(batch_size))
+plt.title('Accuracy vs Time')
+plt.xlabel('Time')
+plt.ylabel('Accuracy')
+plt.legend()
+plt.show()
